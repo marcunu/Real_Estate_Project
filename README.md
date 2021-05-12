@@ -2,20 +2,23 @@
 
 # Real_Estate_Project
 
+## Goal
 Final project of Ironhack, in which I make a study of the existing houses in Madrid and with the use of a database, so that the user can find locations of interest in the surroundings.
 
-# Goal
-
-The goal of this competition is the prediction of the price of diamonds based on their characteristics (weight, color, quality of cut, etc.), putting into practice all the machine learning techniques I know.
-
-# Requirements
 
 
 
-# Libraries
+## Requirements
+
+
+
+## Libraries
 
 [Pandas](https://pandas.pydata.org/docs/)
 [Numpy](https://numpy.org/doc/)
 [Scikit-Learn](https://scikit-learn.org/stable/)
 [Pickle](https://docs.python.org/3/library/pickle.html)
 [Seaborn](https://seaborn.pydata.org/)
+[Matplot lib](https://matplotlib.org/)
+[Selenium](https://www.selenium.dev/documentation/en/)
+[time](https://docs.python.org/3/library/time.html)
