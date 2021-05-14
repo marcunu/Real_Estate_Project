@@ -22,3 +22,4 @@ Final project of Ironhack, in which I make a study of the existing houses in Mad
 [Matplot lib](https://matplotlib.org/)
 [Selenium](https://www.selenium.dev/documentation/en/)
 [time](https://docs.python.org/3/library/time.html)
+[Regex](https://docs.python.org/3/library/re.html)
