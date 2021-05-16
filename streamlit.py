@@ -93,7 +93,7 @@ market = {
     "tipo" : [tipo],
     "barrio_pm2" : [barr], 
     "e_certificate" : [cert],
-    "rent_price" : [2300]
+    "rent_price" : [3000]
     
 }
 
@@ -103,4 +103,4 @@ best_tree = pickle.load(open("Tools/parameters/rfr_md8_mf08_ms3_fun", 'rb'))
 
 valoracion = best_tree.predict(market_test)
 
-st.write("""El precio de mercado de tu vivienda es:""", valoracion)
+st.write("""El precio de mercado de tu vivienda es: """, valoracion)
