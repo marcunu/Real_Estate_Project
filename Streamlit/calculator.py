@@ -10,58 +10,58 @@ import src.manage_data as dat
 
 def app():
 
-    st.write("""
-    ## Here we help you to check it, please enter the desired information in the boxes.
+    st.title("""
+    Here we help you to check it, please enter the desired information in the boxes.
     """)
 
     m2 = st.text_input("""
-    Introduce los metros cuadrados de tu vivienda
+    Enter the square metres of your home:
     """)
 
     habit = st.text_input("""
-    ¿Cuantas habitaciones tiene tu vivienda?
+    How many rooms does your home have?:
     """)
 
     banos = st.text_input("""
-    ¿Cuantas baños tiene tu vivienda?
+    How many bathrooms does your home have?:
     """)
 
     piso = st.text_input("""
-    ¿En que piso esta tu vivienda?
+    What floor is your home on?:
     """)
 
     nueva = dat.sn_bool(st.selectbox("""
-    ¿Es de obra nueva?
+    Is it a new development?:
     """, dat.si_no()))
 
     reforma = dat.sn_bool(st.selectbox("""
-    ¿Necesita reforma?
+    Does it need to be reformed?:
     """, dat.si_no()))
 
     park = dat.sn_bool(st.selectbox("""
-    ¿Tiene plaza de garaje?
+    Do you have a parking space?:
     """, dat.si_no()))
 
     exter = dat.sn_bool(st.selectbox("""
-    ¿Es exterior?
+    is exterior?:
     """, dat.si_no()))
 
     tipo= dat.ht_value(st.selectbox("""
-    ¿Que tipo de vivienda es?
+    What type of housing is it?:
     """, dat.ht_keys()))
 
     distr = st.selectbox("""
-    Selecciona un distrito
+    Select a district:
     """, dat.d_keys())
 
 
     barr = dat.b_values(distr, st.selectbox("""
-    Selecciona un barrio
+    Select a neighborhood:
     """, dat.b_keys(distr)))
 
 
     cert = dat.ec_value(st.selectbox("""
-    ¿Que tipo de certificado energetico tiene?
+    What kind of energy certificate do you have?
     """, dat.ec_keys()))
 
 
@@ -82,15 +82,19 @@ def app():
         
     }
 
-    market_test = pd.DataFrame(market)
-    ren_tree = pickle.load(open("Tools/parameters/rent_price/rp_rfr_md9_mf075_ms2", 'rb'))
-    precio = ren_tree.predict(market_test)
-    #st.write(precio)
+    try:
+        market_test = pd.DataFrame(market)
+        ren_tree = pickle.load(open("Tools/parameters/rent_price/rp_rfr_md9_mf075_ms2", 'rb'))
+        precio = ren_tree.predict(market_test)
+        #st.write(precio)
 
-    market["rent_price"] = [precio]
-    market_test = pd.DataFrame(market)
-    best_tree = pickle.load(open("Tools/parameters/rfr_md8_mf08_ms3_fun", 'rb'))
+        market["rent_price"] = [precio]
+        market_test = pd.DataFrame(market)
+        best_tree = pickle.load(open("Tools/parameters/rfr_md8_mf08_ms3_fun", 'rb'))
 
-    valoracion = best_tree.predict(market_test)
+        valoracion = best_tree.predict(market_test)
 
-    st.title("""El precio de mercado de tu vivienda es: """, round(valoracion[0],-4))
+        st.title(f"""The market price of your property is `{round(valoracion[0],-4)}` €""")
+    
+    except:
+        pass

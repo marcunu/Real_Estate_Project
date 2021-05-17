@@ -79,3 +79,41 @@ def ec_keys():
 
 def ec_value(key):
     return ec_dicc[key]
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+#Graphics
+#---------------------------------------------------------------------------------------------------------------------------------------------------
+#-------------------------------------------------
+#Graphics
+#-------------------------------------------------
+
+def carga_data():
+    data = pd.read_csv("data/casas_limpio.csv")
+    return data
+
+
+def lista_barrios():
+    return sorted(list(d_dicc.keys()))
+
+def grafico(distrito):
+    data = carga_data()
+    data = data[(data["distr"]== f"{distrito}")]
+    return data
+
+
+col_dicc = {
+ 'm2 Built' : 'sq_mt_built',
+ 'm2 Usefull' : 'sq_mt_useful',
+ 'Number of rooms' : 'n_rooms',
+ 'Number of bathrooms' : 'n_bathrooms',
+ 'Floor' : 'floor',
+ 'Rent price' : 'rent_price',
+ 'Buy price' : 'buy_price',
+ 'House Type' : 'house_type_id',
+ 'Prices per m2' : 'barrio_pm2'}
+
+def col_keys():
+    return list(col_dicc.keys())
+
+def col_value(key):
+    return col_dicc[key]

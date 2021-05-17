@@ -9,13 +9,13 @@ imagen = Image.open("Tools/Images/Logo.jpg")
 st.image(imagen)
 
 st.markdown("""
-# La mejor herramienta de tasacion inmobiliaria
+## The best real estate valuation tool
 """)
 
 # Add all your application here
 app.add_app("Home", Home.app)
-app.add_app("Calculador", calculator.app)
-app.add_app("Graficos", graphics.app)
+app.add_app("Calculator", calculator.app)
+app.add_app("Graphics", graphics.app)
 
 
 # The main app
