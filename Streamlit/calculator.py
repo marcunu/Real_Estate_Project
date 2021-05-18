@@ -14,19 +14,19 @@ def app():
     Here we help you to check it, please enter the desired information in the boxes.
     """)
 
-    m2 = st.number_input("""
+    m2 = st.text_input("""
     Enter the square metres of your home:
     """)
 
-    habit = st.number_input("""
+    habit = st.text_input("""
     How many rooms does your home have?:
     """)
 
-    banos = st.number_input("""
+    banos = st.text_input("""
     How many bathrooms does your home have?:
     """)
 
-    piso = st.number_input("""
+    piso = st.text_input("""
     What floor is your home on?:
     """)
 
