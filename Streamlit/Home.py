@@ -15,6 +15,8 @@ def app():
 
     Are you interested in buying a new property but don't know if its value is in line with the **`market value`**?
 
+    Have you ever tried to rent a property and didn't know if the price was right?
+
     Here we help you to check it, please enter the desired information in the boxes.
     """)
 

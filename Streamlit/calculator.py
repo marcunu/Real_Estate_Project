@@ -96,7 +96,7 @@ def app():
 
         st.title(f"""The market price of your property is `{round(valoracion[0],-4)}` €""")
 
-        st.title(f"""The rent price of your property is `{round(precio[0],-4)}` €""")
+        st.title(f"""The rent price of your property is `{round(precio[0], -1)}` €""")
     
     except:
         pass
