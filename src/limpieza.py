@@ -32,7 +32,9 @@ def download_kaggle():
 
 
 def heat_map_triangle(df):
-    
+    '''
+    This function creates a heat map from a selected dataframe
+    '''
     sns.set_theme(style="white")
 
     # Compute the correlation matrix
