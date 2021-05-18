@@ -4,7 +4,7 @@
 
 Have you ever wanted to buy a property but didn't know if it was the right time or if the price was right?
 
-This project is based on a database of more than 16,000 homes with which a machine learning algorithm has been created, this algorithm is based on different characteristics:
+This project is based on a database of more than 16 000 homes with which a machine learning algorithm has been created, this algorithm is based on different characteristics:
 
 * m2 built
 * m2 useful
@@ -24,6 +24,15 @@ The aim of this project is to create a price comparator of the real estate marke
 
 * Market price: the algorithm assigns a market value based on the characteristics you have entered.
 * Rental price: the algorithm assigns a rental price based on the characteristics.
+
+## Steps
+
+* `Get a database` with the information.
+* `Clean-up` the dataset.
+* Create a Database in `SQL`.
+* Get info via `queries`.
+* Create a `streamlit app`.
+* Deploy streamlit app with `heroku`.
 
 
 ## Where
@@ -48,13 +57,13 @@ You can try it [here](https://housecoin.herokuapp.com/)
 
 ## Libraries
 
-[Pandas](https://pandas.pydata.org/docs/)
-[Numpy](https://numpy.org/doc/)
-[Scikit-Learn](https://scikit-learn.org/stable/)
-[Pickle](https://docs.python.org/3/library/pickle.html)
-[Seaborn](https://seaborn.pydata.org/)
-[Matplot lib](https://matplotlib.org/)
-[Regex](https://docs.python.org/3/library/re.html)
-[Streamlit](https://docs.streamlit.io/en/stable/)
-[Plotly](https://plotly.com/python/)
-[Pillow](https://pillow.readthedocs.io/en/stable/)
+* [Pandas](https://pandas.pydata.org/docs/)
+* [Numpy](https://numpy.org/doc/)
+* [Scikit-Learn](https://scikit-learn.org/stable/)
+* [Pickle](https://docs.python.org/3/library/pickle.html)
+* [Seaborn](https://seaborn.pydata.org/)
+* [Matplot lib](https://matplotlib.org/)
+* [Regex](https://docs.python.org/3/library/re.html)
+* [Streamlit](https://docs.streamlit.io/en/stable/)
+* [Plotly](https://plotly.com/python/)
+* [Pillow](https://pillow.readthedocs.io/en/stable/)
