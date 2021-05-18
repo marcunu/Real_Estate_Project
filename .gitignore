@@ -3,6 +3,6 @@
 **/__pycache__
 .vscode
 .env
-data
+#data
 /Tools/chromedriver.exe
 Rent_price.ipynb
