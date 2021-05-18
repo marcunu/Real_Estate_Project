@@ -5,7 +5,7 @@ from PIL import Image
 
 app = MultiApp()
 
-imagen = Image.open("Tools/Images/Logo.jpg")
+imagen = Image.open("Tools/Images/logo.jpg")
 st.image(imagen)
 
 st.markdown("""
