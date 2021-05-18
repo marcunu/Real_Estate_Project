@@ -2,13 +2,47 @@
 
 # Real_Estate_Project
 
+Have you ever wanted to buy a property but didn't know if it was the right time or if the price was right?
+
+This project is based on a database of more than 16,000 homes with which a machine learning algorithm has been created, this algorithm is based on different characteristics:
+
+* m2 built
+* m2 useful
+* Number of rooms
+* Number of bathrooms
+* Floors
+* House type
+* Is new development?
+* is renewal needed?
+* Has parking?
+* is exterior?
+* Energy certificate
+
 ## Goal
-Final project of Ironhack, in which I make a study of the existing houses in Madrid and with the use of a database, so that the user can find locations of interest in the surroundings.
+
+The aim of this project is to create a price comparator of the real estate market, this comparator can help you to know:
+
+* Market price: the algorithm assigns a market value based on the characteristics you have entered.
+* Rental price: the algorithm assigns a rental price based on the characteristics.
 
 
+## Where
+
+You can try it [here](https://housecoin.herokuapp.com/)
 
 
 ## Requirements
+
+* numpy==1.19.5
+* folium==0.12.1
+* streamlit_folium==0.3.0
+* seaborn==0.11.1
+* matplotlib==3.4.1
+* streamlit==0.82.0
+* plotly==4.14.3
+* pandas==1.2.3
+* Pillow==8.2.0
+* scikit_learn==0.24.2
 
 
 
@@ -20,6 +54,7 @@ Final project of Ironhack, in which I make a study of the existing houses in Mad
 [Pickle](https://docs.python.org/3/library/pickle.html)
 [Seaborn](https://seaborn.pydata.org/)
 [Matplot lib](https://matplotlib.org/)
-[Selenium](https://www.selenium.dev/documentation/en/)
-[time](https://docs.python.org/3/library/time.html)
 [Regex](https://docs.python.org/3/library/re.html)
+[Streamlit](https://docs.streamlit.io/en/stable/)
+[Plotly](https://plotly.com/python/)
+[Pillow](https://pillow.readthedocs.io/en/stable/)

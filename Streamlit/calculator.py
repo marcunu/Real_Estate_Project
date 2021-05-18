@@ -14,19 +14,19 @@ def app():
     Here we help you to check it, please enter the desired information in the boxes.
     """)
 
-    m2 = st.text_input("""
+    m2 = st.number_input("""
     Enter the square metres of your home:
     """)
 
-    habit = st.text_input("""
+    habit = st.number_input("""
     How many rooms does your home have?:
     """)
 
-    banos = st.text_input("""
+    banos = st.number_input("""
     How many bathrooms does your home have?:
     """)
 
-    piso = st.text_input("""
+    piso = st.number_input("""
     What floor is your home on?:
     """)
 
@@ -95,6 +95,8 @@ def app():
         valoracion = best_tree.predict(market_test)
 
         st.title(f"""The market price of your property is `{round(valoracion[0],-4)}` €""")
+
+        st.title(f"""The rent price of your property is `{round(precio[0],-4)}` €""")
     
     except:
         pass
