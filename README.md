@@ -39,6 +39,18 @@ The aim of this project is to create a price comparator of the real estate marke
 
 You can try it [here](https://housecoin.herokuapp.com/)
 
+## Languages
+
+* Python
+* SQL
+
+## Programs
+
+* Jupyter Notebook
+* My SQL Workbench
+* Visual Code
+* Streamlit
+* Heroku
 
 ## Requirements
 

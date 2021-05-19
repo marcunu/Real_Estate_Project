@@ -3,8 +3,10 @@ from PIL import Image
 
 
 def app():
-
+    
     # Front Page
+    logo = Image.open("Tools/Images/logo.png")
+    st.image(logo)
 
     imagen = Image.open("Tools/Images/Portada2.jpg")
     st.image(imagen)
@@ -15,7 +17,7 @@ def app():
 
     Are you interested in buying a new property but don't know if its value is in line with the **`market value`**?
 
-    Have you ever tried to rent a property and didn't know if the price was right?
+    Have you ever tried to **`rent a property`** and didn't know if the price was right?
 
     Here we help you to check it, please enter the desired information in the boxes.
     """)
